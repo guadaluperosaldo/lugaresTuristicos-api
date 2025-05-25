@@ -1,0 +1,13 @@
+{
+    "openapi" : "3.0.0",
+        "info": {
+            "title": "API de lugares turísticos",
+            "version": "1.0.0",
+            "description": "API sobre datos de lugares turísticos"
+        },
+        "servers": [
+            {
+                "url": "http://localhost:3002"
+            }
+        ]
+}
