@@ -7,7 +7,7 @@
         },
         "servers": [
             {
-                "url": "lugaresturisticos-api-production.up.railway.app"
+                "url": "https://lugaresturisticos-api-production.up.railway.app"
             }
         ]
 }
