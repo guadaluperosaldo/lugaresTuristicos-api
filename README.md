@@ -12,3 +12,14 @@ API REST para gestionar lugares turísticos con Node.js, Express y MySQL. Permit
 - Registro de errores con Winston
 - Conexión a base de datos MySQL
 - Código modular y estructurado
+
+## Tecnologías
+
+- Node.js
+- Express
+- MySQL
+- Swagger (swagger-jsdoc y swagger-ui-express)
+- Winston (logs)
+- express-validator (validaciones)
+- dotenv (variables de entorno)
+
