@@ -5,6 +5,7 @@ const app = express();
 const turismo_router = require("./router/turismo_router");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
+const cors = require('cors');
 
 // Configuración del logger
 const logger = winston.createLogger({
@@ -14,6 +15,14 @@ const logger = winston.createLogger({
         new winston.transports.File({ filename: path.join(__dirname, "logs/errores.log") })
     ],
 });
+
+// Configuración de CORS
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 
 const swaggerOptions = {
   definition: require('./swagger.json'),
