@@ -18,7 +18,7 @@ const logger = winston.createLogger({
 
 // Configuración de CORS
 app.use(cors({
-  origin: '*',
+  origin: ['http://lugaresturisticos-api-production.up.railway.app/api-docs', '*'],
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
